@@ -2,7 +2,7 @@
   "_comment": "This controls the 'Services' section (the glass card with the checklist). Edit the values below — never touch index.html.",
 
   "eyebrow": "Custom Thumbnail",
-  "heading": "Thumbnail for YouTube Videos & Livestreams",
+  "heading": "Thumbnail for YouTube Videos",
 
   "_comment_features": "Add, remove or reorder lines freely — each one becomes a checklist item with a green checkmark.",
   "features": [
