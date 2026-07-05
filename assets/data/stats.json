@@ -14,23 +14,23 @@
     {
       "image": "assets/images/case-study/vid-1-thumb.webp",
       "title": "Free Editing Pack for After Effects",
-      "views": { "value": 18.4, "decimals": 1, "suffix": "K" },
-      "impressions": { "value": 210, "decimals": 0, "suffix": "K+" },
-      "ctr": { "value": 9.6, "decimals": 1, "suffix": "%" }
+      "views": { "value": 14.7, "decimals": 1, "suffix": "K" },
+      "impressions": { "value": 206.3, "decimals": 0, "suffix": "K+" },
+      "ctr": { "value": 10.5, "decimals": 1, "suffix": "%" }
     },
     {
       "image": "assets/images/case-study/vid-2-thumb.webp",
       "title": "Viral 3D Space Edit",
-      "views": { "value": 26, "decimals": 0, "suffix": "K+" },
-      "impressions": { "value": 340, "decimals": 0, "suffix": "K+" },
-      "ctr": { "value": 11.2, "decimals": 1, "suffix": "%" }
+      "views": { "value": 10.6, "decimals": 0, "suffix": "K+" },
+      "impressions": { "value": 103.2, "decimals": 0, "suffix": "K+" },
+      "ctr": { "value": 8, "decimals": 1, "suffix": "%" }
     },
     {
       "image": "assets/images/case-study/vid-3-thumb.webp",
       "title": "New Viral Mask Transition",
-      "views": { "value": 15, "decimals": 0, "suffix": "K+" },
-      "impressions": { "value": 180, "decimals": 0, "suffix": "K+" },
-      "ctr": { "value": 8.4, "decimals": 1, "suffix": "%" }
+      "views": { "value": 9.2, "decimals": 0, "suffix": "K+" },
+      "impressions": { "value": 88.3, "decimals": 0, "suffix": "K+" },
+      "ctr": { "value": 7.7, "decimals": 1, "suffix": "%" }
     }
   ]
 }
