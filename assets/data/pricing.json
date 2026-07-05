@@ -1,0 +1,50 @@
+{
+  "_comment": "This controls the 'Pricing' section. Each object inside the 'plans' list becomes one pricing card, in the same order as written here. Never touch index.html — just edit/add/remove plans below.",
+
+  "_comment_fields": "name = card title. price = shown big price, keep the ₹ or change the currency symbol. features = list of lines with checkmarks. popular = true shows the 'Most Popular' badge and highlights the card (use it on ONLY one plan). addon = optional small highlighted note under the features (delete the whole addon block on a plan if you don't need it). button = the text/link of the card's button.",
+
+  "plans": [
+    {
+      "name": "Starter",
+      "price": "₹169",
+      "features": [
+        "1 Custom Thumbnail",
+        "Full HD (1080p)",
+        "3 Revisions",
+        "24–48 Hours Delivery"
+      ],
+      "popular": false,
+      "addon": {
+        "text": "Want the Project File too?",
+        "amount": "+₹199",
+        "note": "Need it edited/customized for you? +₹30 extra"
+      },
+      "button": { "text": "Get Started", "link": "#contact" }
+    },
+    {
+      "name": "Standard",
+      "price": "₹299",
+      "features": [
+        "2 Thumbnails",
+        "Channel Based Design",
+        "3–4 Revisions",
+        "Priority Support",
+        "Project File Included Free"
+      ],
+      "popular": true,
+      "button": { "text": "Get Started", "link": "#contact" }
+    },
+    {
+      "name": "Project File Only",
+      "price": "₹69",
+      "features": [
+        "Editable After Effects File",
+        "Organized Layers",
+        "Easy to Edit",
+        "Instant Delivery"
+      ],
+      "popular": false,
+      "button": { "text": "Get Started", "link": "#contact" }
+    }
+  ]
+}

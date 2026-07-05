@@ -1,0 +1,18 @@
+{
+  "_comment": "This controls the 'Services' section (the glass card with the checklist). Edit the values below — never touch index.html.",
+
+  "eyebrow": "Custom Thumbnail",
+  "heading": "Thumbnail for YouTube Videos & Livestreams",
+
+  "_comment_features": "Add, remove or reorder lines freely — each one becomes a checklist item with a green checkmark.",
+  "features": [
+    "After Effects Niche Specialist",
+    "Full HD (1920×1080)",
+    "Channel-Based Design",
+    "Detailed, Polished Thumbnails",
+    "Optimized for Better Clickability",
+    "3–4 Revisions Included"
+  ],
+
+  "button": { "text": "Get My Thumbnail", "link": "#contact" }
+}

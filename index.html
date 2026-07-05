@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edy Edition — After Effects Thumbnail Designer</title>
+<meta name="description" content="High-CTR YouTube thumbnails for After Effects tutorials, presets, giveaways and editing creators.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="assets/config.js" defer></script>
+</head>
+<body>
+
+<!-- ================= CUSTOM CURSOR ================= -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ================= AMBIENT BACKGROUND ================= -->
+<div class="bg-layer">
+  <div class="bg-grid"></div>
+  <div class="blob blob-a"></div>
+  <div class="blob blob-b"></div>
+  <div class="blob blob-c"></div>
+  <div class="ray ray-a"></div>
+  <div class="ray ray-b"></div>
+  <canvas id="particles"></canvas>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="nav-wrap" id="navWrap">
+  <nav class="nav-pill" id="navPill">
+    <a href="#home" class="nav-logo" id="navLogo">EDY<span>&lt;/&gt;</span><small>EDITION</small></a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
+      <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+      <li><a href="#pricing" class="nav-link" data-section="pricing">Pricing</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#contact" class="nav-cta magnetic">Let's Work Together <span class="arrow">→</span></a>
+      <button class="nav-burger" id="navBurger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#home" class="nav-mobile-link">Home</a>
+    <a href="#portfolio" class="nav-mobile-link">Portfolio</a>
+    <a href="#services" class="nav-mobile-link">Services</a>
+    <a href="#pricing" class="nav-mobile-link">Pricing</a>
+    <a href="#contact" class="nav-mobile-link">Contact</a>
+  </div>
+</header>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-text reveal-up" id="heroText">
+      <!-- Filled automatically from assets/data/hero.json -->
+    </div>
+
+    <div class="hero-stats reveal-up delay-2" id="heroStats">
+      <!-- Filled automatically from assets/data/stats.json (overallStats) -->
+    </div>
+  </div>
+
+  <div class="marquee-outer reveal-up">
+    <div class="marquee-row row1" id="marqueeRow1"></div>
+    <div class="marquee-row row2" id="marqueeRow2"></div>
+  </div>
+
+  <div class="scroll-cue"><span></span></div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section class="portfolio" id="portfolio">
+  <div class="section-head reveal-up">
+    <span class="eyebrow">✦ Explore My Work</span>
+    <h2>High-converting thumbnails for creators.</h2>
+  </div>
+
+  <div class="portfolio-toolbar reveal-up">
+    <div class="cat-pills" id="catPills">
+      <!-- Filled automatically from assets/data/portfolio.json — one pill per unique category -->
+    </div>
+  </div>
+
+
+  <div class="portfolio-grid" id="portfolioGrid"></div>
+  <div class="view-more-wrap" id="viewMoreWrap">
+    <button class="btn btn-outline magnetic" id="viewMoreBtn">View All <span class="arrow">→</span></button>
+  </div>
+</section>
+
+<!-- ================= RESULTS / ANALYTICS ================= -->
+<section class="results" id="results">
+  <div class="section-head reveal-up">
+    <span class="eyebrow">◆ My Video Analytics</span>
+    <h2>Real results from my own channel.</h2>
+  </div>
+
+  <div class="channel-showcase" id="channelShowcase">
+    <!-- Filled automatically from assets/data/stats.json (caseStudies) -->
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+  <div class="glass-card services-card reveal-up" id="servicesCard">
+    <!-- Filled automatically from assets/data/services.json -->
+    <div class="services-visual" aria-hidden="true">
+      <div class="services-frame f1"></div>
+      <div class="services-frame f2"></div>
+      <div class="services-frame f3"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="pricing" id="pricing">
+  <div class="section-head reveal-up">
+    <span class="eyebrow">₹ Simple, Transparent Pricing</span>
+    <h2>Affordable pricing for every creator.</h2>
+  </div>
+  <div class="pricing-grid" id="pricingGrid">
+    <!-- Filled automatically from assets/data/pricing.json -->
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="glass-card contact-card reveal-up">
+    <div class="contact-info">
+      <span class="eyebrow">✉ Let's Talk</span>
+      <h2>Let's Build Your Next Thumbnail.</h2>
+      <p>Have a project in mind? Let's create something amazing together.</p>
+      <div class="contact-links" id="contactLinks">
+        <!-- Filled automatically from assets/config.js -->
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm" method="POST">
+      <input type="hidden" name="_subject" value="New enquiry — website contact form">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <label>Your Name<input type="text" name="name" placeholder="Enter your name" required></label>
+      <label>Your Email<input type="email" name="email" placeholder="Enter your email" required></label>
+      <label>Your Message<textarea name="message" rows="4" placeholder="Tell me about your project..." required></textarea></label>
+      <button type="submit" class="btn btn-primary magnetic full-width">Send Message <span class="arrow">→</span></button>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand" id="footerBrand">
+      <!-- Filled automatically from assets/config.js -->
+    </div>
+    <div class="footer-social" id="footerSocial">
+      <!-- Filled automatically from assets/config.js -->
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span id="footerCopyright"></span>
+    <a href="#home" class="to-top">↑ Back to top</a>
+  </div>
+</footer>
+
+<!-- ================= PORTFOLIO POPUP ================= -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-card popup-card-preview" id="popupCard">
+    <button class="popup-close" id="popupClose">✕</button>
+    <div class="popup-thumb popup-thumb-preview" id="popupThumb"></div>
+    <div class="popup-body" id="popupBody">
+      <!-- Filled automatically: category badge + optional "View Project" link -->
+    </div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

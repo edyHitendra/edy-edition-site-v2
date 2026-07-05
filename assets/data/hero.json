@@ -1,0 +1,17 @@
+{
+  "_comment": "This controls the big HERO section at the very top of the site. Edit the text values below — never touch index.html.",
+
+  "badge": "After Effects Thumbnail Designer",
+
+  "_comment_title": "titleLine1 is the plain-white part, titleHighlight is the glowing green part. <br> already breaks the line, don't add another.",
+  "titleLine1": "Thumbnails That",
+  "titleHighlight": "Get You Clicks.",
+
+  "subtitle": "I design high-CTR YouTube thumbnails for After Effects tutorials, presets, giveaways, project files and editing creators.",
+
+  "_comment_buttons": "You can add, remove or reorder buttons here. style must be one of: primary, ghost, outline.",
+  "buttons": [
+    { "text": "View My Work", "link": "#portfolio", "style": "primary" },
+    { "text": "Contact Me", "link": "#contact", "style": "ghost" }
+  ]
+}

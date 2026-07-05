@@ -1,0 +1,22 @@
+{
+  "_comment": "This controls the whole Portfolio section — the filter pills AND every thumbnail card. Never touch index.html to add a new thumbnail!",
+
+  "_comment_howTo": "TO ADD A NEW THUMBNAIL: 1) Drop your image file inside assets/images/portfolio/  2) Copy one block below (the part between { and }) and paste it inside the 'items' list  3) Change 'image' to your file's path  4) Change 'category' to whatever group it belongs to (type a NEW category name and a new filter pill appears automatically — you never need to edit any pill by hand)  5) 'link' is optional — only add it if this thumbnail should open an outside link (like the finished YouTube video). Delete the whole 'link' line if you don't need it.",
+
+  "items": [
+    { "image": "assets/images/portfolio/creator-1.webp", "category": "Big Creator" },
+    { "image": "assets/images/portfolio/creator-2.webp", "category": "Big Creator" },
+    { "image": "assets/images/portfolio/creator-3.webp", "category": "Big Creator" },
+    { "image": "assets/images/portfolio/creator-4.webp", "category": "Big Creator", "link": "https://www.youtube.com/@HitendraEdition" },
+
+    { "image": "assets/images/portfolio/tutorial-1.webp", "category": "Tutorial" },
+    { "image": "assets/images/portfolio/tutorial-2.webp", "category": "Tutorial" },
+    { "image": "assets/images/portfolio/tutorial-3.webp", "category": "Tutorial" },
+
+    { "image": "assets/images/portfolio/pjf-1.webp", "category": "Project File" },
+
+    { "image": "assets/images/portfolio/pack-1.webp", "category": "Pack & Giveaway" },
+    { "image": "assets/images/portfolio/pack-2.webp", "category": "Pack & Giveaway" },
+    { "image": "assets/images/portfolio/pack-3.webp", "category": "Pack & Giveaway" }
+  ]
+}

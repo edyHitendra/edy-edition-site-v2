@@ -1,0 +1,36 @@
+{
+  "_comment": "This file controls two things: the 4 small stat cards in the hero section, and the 'Real results from my own channel' section further down. Never touch index.html — just edit the values below.",
+
+  "_comment_overallStats": "These are the 4 counter cards next to the hero text (Impressions, CTR, Views, Subscribers). 'value' is the number it counts up to, 'decimals' is how many decimal places to show, 'suffix' is the text shown right after the number (like K+, %, +).",
+  "overallStats": [
+    { "value": 446, "decimals": 0, "suffix": "K+", "label": "Impressions" },
+    { "value": 8.9, "decimals": 1, "suffix": "%", "label": "Average CTR" },
+    { "value": 40, "decimals": 0, "suffix": "K+", "label": "Views" },
+    { "value": 2700, "decimals": 0, "suffix": "+", "label": "Subscribers" }
+  ],
+
+  "_comment_caseStudies": "These are the individual video results shown in the 'Real results from my own channel' section. To add a new one: 1) put the thumbnail image inside assets/images/case-study/, 2) copy one of the blocks below and change the image path, title and numbers. You can add as many as you like.",
+  "caseStudies": [
+    {
+      "image": "assets/images/case-study/vid-1-thumb.webp",
+      "title": "Free Editing Pack for After Effects",
+      "views": { "value": 18.4, "decimals": 1, "suffix": "K" },
+      "impressions": { "value": 210, "decimals": 0, "suffix": "K+" },
+      "ctr": { "value": 9.6, "decimals": 1, "suffix": "%" }
+    },
+    {
+      "image": "assets/images/case-study/vid-2-thumb.webp",
+      "title": "Viral 3D Space Edit",
+      "views": { "value": 26, "decimals": 0, "suffix": "K+" },
+      "impressions": { "value": 340, "decimals": 0, "suffix": "K+" },
+      "ctr": { "value": 11.2, "decimals": 1, "suffix": "%" }
+    },
+    {
+      "image": "assets/images/case-study/vid-3-thumb.webp",
+      "title": "New Viral Mask Transition",
+      "views": { "value": 15, "decimals": 0, "suffix": "K+" },
+      "impressions": { "value": 180, "decimals": 0, "suffix": "K+" },
+      "ctr": { "value": 8.4, "decimals": 1, "suffix": "%" }
+    }
+  ]
+}
